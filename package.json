@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "sh parse-local-deploy",
-    "publish": "brunch build --production; parse deploy"
+    "deploy": "brunch build --production; parse deploy"
   },
   "dependencies": {
     "auto-reload-brunch": ">= 1.0 < 1.8",
