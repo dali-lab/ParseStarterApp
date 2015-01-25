@@ -1,0 +1,81 @@
+#user_profile {
+
+  $pic_size: 150px;
+
+  .photo img {
+    width: 100px;
+
+  }
+  .profile_image {
+
+    .photo:hover .overlay {
+      opacity: 0.9;
+    }
+    .cropit-image-background {
+      opacity: 0.2;
+    }
+    .cropit-image-preview {
+      height: $pic_size;
+      margin: auto;
+      width: $pic_size;
+    }
+    .cropit-image-preview-container {
+      height: $pic_size;
+      margin: auto;
+      width: $pic_size;
+    }
+    .cropit-image-preview.cropit-image-loaded {
+      cursor: move;
+    }
+    .cropit-image-preview.cropit-image-loading .spinner {
+      opacity: 1;
+    }
+    .image-buttons {
+      margin: auto;
+      text-align: center;
+    }
+    .overlay {
+      background: #fff;
+      bottom: 0;
+      height: $pic_size/5;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      width: $pic_size;
+    }
+    .photo {
+      background-size: $pic_size !important;
+      height: $pic_size;
+      margin: auto;
+      opacity: 1;
+      padding: 0;
+      position: relative;
+      width: $pic_size;
+    }
+    input.cropit-image-input {
+      margin: auto;
+      position: relative;
+      visibility: hidden;
+    }
+    input.cropit-image-zoom-input {
+      margin: auto;
+      position: relative;
+      width: $pic_size;
+    }
+
+  }
+  .profile_name {
+    margin-top: -20px;
+  }
+  .profile_name:hover .name-overlay {
+    opacity: 0.9;
+  }
+  .name-overlay {
+    margin-top: -30px;
+    background: #fff;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+  }
+}

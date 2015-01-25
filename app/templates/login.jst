@@ -1,0 +1,59 @@
+
+<!-- Modal -->
+<div class="modal fade bs-modal-md" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+
+      <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+
+      <div class="login-tabs">
+        <ul id="login-tabs" class="nav nav-tabs">
+          <li class="active"><a href="#signin" data-toggle="tab">Sign In</a>
+          </li>
+          <li class=""><a href="#signup" data-toggle="tab">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-body login">
+        <div class="tab-content">
+
+          <div class="tab-pane fade active in" id="signin">
+
+            <form class="fb-login-form">
+              <button class="btn-facebook"></button>
+            </form>
+            <h2 style="text-align:center;">or</h2>
+            <hr>
+            <form class="login-form">
+              <div class="error" style="display:none"></div>
+              <input type="text" id="login-email" placeholder="Email" />
+              <input type="password" id="login-password" placeholder="Password" />
+              <button>Sign In</button>
+            </form>
+
+          </div>
+          <div class="tab-pane fade" id="signup">
+
+            <form class="fb-login-form">
+              <button class="btn-facebook"></button>
+            </form>
+            <hr>
+
+            <form class="signup-form">
+              <h2>Sign Up</h2>
+              <div class="error" style="display:none"></div>
+              <input type="text" id="signup-email" placeholder="Email" />
+              <input type="text" id="signup-displayname" placeholder="Display Name" />
+              <input type="password" id="signup-password" placeholder="Create a Password" />
+              <button>Sign Up</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->

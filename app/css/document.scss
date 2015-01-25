@@ -1,0 +1,26 @@
+.large_document {
+
+  .line {
+    font-size: 30px;
+  }
+
+}
+.document_card {
+  .panel-body {
+    background-color: #ecf0f1;
+  }
+  .panel-heading {
+    background-color: #222;
+    color: white;
+  }
+  .panel-footer {
+    background-color: #222;
+    .glyphicon {
+      color: white;
+    }
+    .star,
+    .heart {
+      display: inline-block;
+    }
+  }
+}

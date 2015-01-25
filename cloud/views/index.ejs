@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<!-- example template page for a route that injects
+     facebook meta tags but is really just a copy of the index file otherwise
+     if you were to use this make sure its basically your app/assests/index.html file
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://servername/images/logo.png" />
+
+  <% if (model) { %>
+    <meta property="og:title" content="an object by <%= model.get('authorname') %>" />
+    <meta property="og:description" content="<%= model.get('as_string') %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:audio" content="<%= model.get('audio') %>" />
+    <meta property="og:audio:title" content="a thing" />
+    <meta property="og:audio:artist" content="<%= model.get('authorname') %>" />
+    <meta property="og:audio:type" content="application/mp3">
+    <script>
+      window.display_model  = <%- JSON.stringify(model) %>;
+      window.display_author = <%- JSON.stringify(author) %>;
+    </script>
+  <% } else { %>
+    <meta property="og:description" content="static site description" />
+  <% }  %>
+
+
+  <title>SiteTitle</title>
+  <script src="http://www.parsecdn.com/js/parse-1.3.3.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/styles/vendor.css">
+  <link rel="stylesheet" type="text/css" href="/styles/app.css">
+  <!-- alias for backbone to work with backbone-autocomplete and other backbone modules-->
+  <script>
+    //alias backbone to parse for
+    window.Backbone = window.Parse;
+    window.Backbone.Model = window.Parse.Object;
+  </script>
+
+  <!-- links in all the various css in one -->
+  <script src='/js/vendor.js'></script>
+  <!-- links in all the various vendor javascript in one just as jquery-->
+  <script src='/js/templates.js'></script>
+  <!-- links in all the various vendor javascript in one just as jquery-->
+  <script src='/js/app.js'></script>
+
+
+
+  <!-- links in all the various javascript in one -->
+
+  <!-- load up specific javascript -->
+  <script>
+    require('initialize');
+  </script>
+
+</head>
+
+<body>
+  <!-- facebook init stufs -->
+  <div id="fb-root"></div>
+
+
+  <section id="layout">
+    <section id="navview"></section>
+    <section class="container" id="main_content_area"></section>
+    <section id="footer"></section>
+  </section>
+
+
+</body>
+
+
+</html>

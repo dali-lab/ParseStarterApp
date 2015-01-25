@@ -1,0 +1,56 @@
+<div id="createview">
+
+  <!-- Modal -->
+  <div class="modal fade bs-modal-md" id="create_modal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+
+        <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+        <br>
+
+        <div class="modal-body create">
+
+          <form class="create-form">
+            <h2>First, Write</h2>
+            <hr>
+            <div class="alert alert-danger" role="alert"  style="display:none">...</div>
+            <div class="alert alert-info alert-dismissible" role="alert"  style="display:none">...</div>
+
+            <div class="form-group">
+              <label class="control-label sr-only" for="text_input">some text</label>
+              <input type="text" class="form-control create_lines" id ="text_input" placeholder="some text">
+              <span class="glyphicon form-control-feedback"></span>
+            </div>
+
+          <ul class="pager">
+              <li class="previous disabled"><a href="#">&larr; Previous</a></li>
+              <li class="next"><a href="#" id="submit_button">Next &rarr;</a></li>
+            </ul>
+          </form>
+
+
+          <form class="done-form" style="display:none;">
+            <h2>Success!</h2>
+            <div class="alert alert-danger" role="alert"  style="display:none">...</div>
+            <div class="alert alert-info alert-dismissible" role="alert"  style="display:none">...</div>
+
+            Success!<br>
+            You Did It!<br>
+            Now Write Another!<br>
+            <br>
+
+            <button class="btn btn-lg btn-primary" id="continue_button">Continue</button>
+
+          </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->
+
+</div>

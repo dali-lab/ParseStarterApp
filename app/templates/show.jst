@@ -1,0 +1,44 @@
+
+<div class="container" id="show">
+
+
+  <% var well = (modal) ? "" : "well" ;%>
+  <div class="<%=well%>">
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+        <div id="large_document"></div>
+
+      </div>
+
+      <div class="col-md-4 text-center">
+          <div class="row">
+            <div class="profile_image">
+            <div class="photo  img-circle" style="background: url(<%=photoUrl%>) no-repeat;"></div>
+            </div>
+          </div>
+          <div class="row">
+            <%=authorname %>
+          </div>
+          <div class="btn-group-vertical">
+              <!-- TODO: twitter and fb integrations -->
+              <button type="button" class="btn btn-default" id="twitter_button">twitter</button>
+              <button type="button" class="btn btn-default" id="facebook_button">facebook</button>
+              <button type="button" class="btn btn-default" id="star_button"><span class="glyphicon glyphicon-star"></span></button>
+              <button type="button" class="btn btn-default" id="heart_button"><span class="glyphicon glyphicon-heart"></span></button>
+              <button type="button" class="btn btn-default" id="form_button">form <%=form%><br><img src="/images/forms/<%=form%>.png"></img></button>
+              <button type="button" class="btn btn-default" id="report_button">report</button>
+          </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+</div>

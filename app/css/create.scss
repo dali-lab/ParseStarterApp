@@ -1,0 +1,41 @@
+#createview {
+
+  #create_modal {
+
+    .form-control:focus {
+      //remove the box shadow as it doesn't change color correctly
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+    }
+    .close {
+      padding: 5px;
+    }
+    .create {
+      margin: 45px auto 25px;
+      width: 350px;
+      .error {
+        background: #fdeff0;
+        border: 1px solid red;
+        margin-bottom: 15px;
+        padding: 5px 15px;
+      }
+      .signup-form {
+        margin-top: 25px;
+      }
+      h2 {
+        font-size: 50x;
+        font-weight: normal;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      input {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 310px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "global";
+
+.title h1 {
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  -webkit-text-rendering: optimizeLegibility;
+  color: #888;
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  top: -120px;
+  width: 100%;
+
+}
+#main_content_area {
+  margin-top: $header-height * 2;
+
+}
+.jumbotron h1 {
+  font-size: 100px;
+
+}
+.document_logo {
+  text-align: center;
+  margin-bottom: 30px;
+  img {
+    width: 200px;
+  }
+}

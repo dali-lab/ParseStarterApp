@@ -1,0 +1,35 @@
+@import "global";
+
+footer {
+
+  // scss variables
+  $topmargin: $footer-height/5;
+
+  background-color: rgb(34, 34, 34);
+  height: $footer-height;
+  position: relative;
+
+  .footerlinks {
+    margin-top: 15px;
+
+  }
+  .dali-logo {
+    margin-top: $topmargin;
+    width: 200px;
+  }
+  .twitter-timeline {
+    margin-top: $topmargin/2;
+  }
+  hr {
+    border-color: #c4c4c4;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0.5;
+    padding-right: 20px;
+
+  }
+  .container {
+
+    margin-top: $topmargin;
+  }
+}

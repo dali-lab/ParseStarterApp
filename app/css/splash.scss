@@ -1,0 +1,23 @@
+#splash {
+  width: 75%;
+  .icons img {
+    height: 60px;
+    width: 60px;
+  }
+  .carousel-document {
+    text-align: center;
+    // height: 100px;
+    vertical-align: middle;
+  }
+  .carousel-control.right {
+    background-image: none;
+
+  }
+  .carousel-control.left {
+    background-image: none;
+
+  }
+  .carousel {
+
+  }
+}

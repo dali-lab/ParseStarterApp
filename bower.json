@@ -1,0 +1,29 @@
+{
+  "name": "ParseStarterApp",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {
+    "bootstrap": ">=3.0.0",
+    "underscore": ">=1.7.0",
+    "cropit": "~0.2.0",
+    "string": "^2.0.0",
+    "audiojs": "*",
+    "bootstrap-dialog": "~1.33.4",
+    "auto-reload-brunch": "~1.7.5"
+  },
+  "overrides": {
+    "videojs": {
+      "name": "videojs"
+    },
+    "audiojs": {
+      "main": [
+        "audiojs/audio.min.js"
+      ]
+    },
+    "auto-reload-brunch": {
+      "main": [
+        "vendor/auto-reload.js"
+      ]
+    }
+  }
+}

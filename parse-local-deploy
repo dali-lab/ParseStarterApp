@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cleanup() {
+				echo "killing brunch watch running on pid:  $brunchPID"
+				kill -INT "$brunchPID"
+				exit
+}
+
+trap "cleanup" SIGINT
+./node_modules/brunch/bin/brunch watch &
+brunchPID="$!"
+./node_modules/parse-develop/parse-develop

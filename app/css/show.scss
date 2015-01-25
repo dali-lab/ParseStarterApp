@@ -1,0 +1,21 @@
+#show {
+
+  $pic_size: 75px;
+
+  .profile_image {
+    // float: right;
+    .photo {
+      height: $pic_size;
+      margin: auto;
+      opacity: 1;
+      padding: 0;
+      position: relative;
+      width: $pic_size;
+      background-size: $pic_size $pic_size !important;
+    }
+
+  }
+  .profile_name {
+    margin-top: -20px;
+  }
+}
