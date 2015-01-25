@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');    // Set the template engine
 app.locals.parseApplicationId = 'INSERT_PARSE_APPLICATION_ID';
 app.locals.parseJavascriptKey = 'INSERT_PARSE_JAVASCRIPT_KEY';
 
-app.locals.facebookApplicationId = 'INSERT_FACEBOOK_KEY';
+app.locals.facebookApplicationId = 'INSERT_FACEBOOK_APP_ID';
 
 // Setup underscore to be available in all templates
 app.locals._ = require('underscore');

@@ -64,7 +64,7 @@ $(function() {
   // ignore the duplicate FB.init warnings
   window.fbAsyncInit = function() {
     Parse.FacebookUtils.init({ //fb parse integration
-      appId: '320282164829690',
+      appId: 'INSERT_FACEBOOK_APP_ID',
       cookie: true, // enable cookies to allow Parse to access the session
       xfbml: true
     });
