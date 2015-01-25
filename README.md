@@ -3,7 +3,7 @@
 This is HTML5 application, built with [Brunch](http://brunch.io) and [Parse.com](http://parse.com).  It uses Brunch as its build tool and bower for dependencies. It has an Expressjs app that runs in Parse for handling some custom routes for Facebook sharing. 
 
 ## Getting started (on osx)
-* ###Install (run commands in Terminal):
+* ###Install###
 	* [Brew] (http:brew.sh):  opensource package manager for OS X
     * [Node.js](http://nodejs.org): `brew install node` 
     * [Brunch](http://brunch.io): `npm install -g brunch`
@@ -12,15 +12,15 @@ This is HTML5 application, built with [Brunch](http://brunch.io) and [Parse.com]
     * `cd MyNewApp`
     * Install node and brunch depencies: `npm install`
     * Install bower packages: `bower install`
-* ###Configure:
+* ###Configure###
 	* Edit:  cloud/app.js, config/global.json, initialize.js
 	and change the lines with INSERT_PARSE_APPLICATION_ID, and INSERT_PARSE_JAVASCRIPT_KEY
 	to your parse keys that you get by creating an account on Parse.com. 
 	* In initialize.js and cloud/app.js change the INSERT_FACEBOOK_APP_ID to use your facebook app id after you create your facebook app on developer.facebook.com.
 	* When creating your facebook app, set your site url to: http://localhost:3000 or add localhost to your app domains  (this helps for testing locally). 
-* ###Run:
+* ###Run###
 	* `npm start` — starts a continuous rebuild local server that runs [locally](http://localhost:3000/)	
-* ###Learn:
+* ###Learn###
     * `public/` dir is fully auto-generated and served by HTTP server *do not edit anything in this dir*
     * Write your code in the `app/` dir.
     * Place static files into `app/assets/` these will be automatically copied to `public/`. So `app/assets/logo.jpg -> http://localhost:3000/logo.jpg`
@@ -39,6 +39,6 @@ This is HTML5 application, built with [Brunch](http://brunch.io) and [Parse.com]
     * `brunch-config.coffee` is the config file for the brunch build system. Brunch is used to compile the site, constructing javascript files and css files from the files in `app/` and building out `public/`.
     * `bower.json` is the config file for the bower frontend javascript dependencies. If you add javascript modules to run on the frontend just do:  `bower install packagename --save`
     * any other files are either dependencies or generated files you probably don't need.  
-* ###Publish
+* ###Publish###
 	* push to Parse Hosting:   `npm run-script deploy`
 
