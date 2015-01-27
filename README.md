@@ -3,6 +3,9 @@
 This is HTML5 application, built with [Brunch](http://brunch.io) and [Parse.com](http://parse.com).  It uses Brunch as its build tool and bower for dependencies. It has an Expressjs app that runs in Parse for handling some custom routes for Facebook sharing. 
 
 
+![](https://raw.githubusercontent.com/dali-lab/ParseStarterApp/master/app/assets/images/screenshot.png)
+
+
 ## Getting started (on osx)
 
 
